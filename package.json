@@ -1,0 +1,21 @@
+{
+  "name": "zinemode",
+  "version": "0.2.0",
+  "description": "Read web articles in paged, magazine-style columns. Bookmarklet and userscript for Safari on iPad and Mac, and other browsers.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "build:site": "node scripts/build.mjs --site",
+    "test": "node scripts/build.mjs && node --test --test-concurrency=1 test/zinemode.test.mjs"
+  },
+  "homepage": "https://crazor.github.io/ZineMode/",
+  "repository": "github:Crazor/ZineMode",
+  "dependencies": {
+    "@mozilla/readability": "0.6.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2",
+    "playwright": "1.63.0"
+  }
+}
